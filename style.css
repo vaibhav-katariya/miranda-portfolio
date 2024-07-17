@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ceno;
+    src: url(./616fd1dd00cf6c70f978fc69_Canopee.ttf);
+}
+@font-face {
+    font-family: dema;
+    src: url(./5f242a69b1577e63266b4d72_DomaineDispCondMedium.ttf);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+p{
+    font-family: dema;
+}
+h1,h2,h3{
+    font-family: ceno;
+}
+.main{
+    background-color: #222;
+    overflow: hidden;
+}
+.page1{
+    min-height: 135vh;
+    width: 100%;
+    background-color: #C5BEB4;
+    overflow: hidden;
+}
+.nav-content{
+    padding: 0 2vw;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #222;
+}
+.nav-content > img{
+    height: 20px;
+}
+.nav-content > i{
+    font-size: 2vw;
+}
+.elam{
+    background: transparent;
+    border: none;
+}
+.elam  h2{
+    font-family: ceno;
+}
+.elam p{
+    font-family: dema;
+}
+.elam  h3{
+    font-family: dema;
+}
+.elam{
+    overflow: hidden;
+}
+.elam > img{
+    transition: all linear 0.5s;
+}
+.elam > img:hover{
+    scale: 1.1;
+}
+.page1 > h1{
+    padding: 1vw;
+    font-size: 31vw;
+    background-color: #1C1C19;
+    color: #C5BEB4;
+    font-family: dema;
+    line-height: 25vw;
+    letter-spacing: -2vw;
+    width: 98%;
+    margin: auto;
+}
+.page2{
+    padding: 1vw;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #C5BEB4;
+}
+.page2-left > h2{
+    font-size: 8vw;
+    letter-spacing: -7px;
+    line-height: 18vh;
+}
+.page2-left > h2 > span{
+    font-size: 13vw;
+}
+.page2-right > h2{
+    font-size: 8vw;
+    letter-spacing: -5px;
+    line-height: 17vh;
+}
+.page3{
+    padding: 1vw;
+    min-height: 50vh;
+    background-color: #C5BEB4;
+}
+.page3-text{
+    padding: 1vw;
+    background-color: #1C1C19;
+    color: #C5BEB4;
+}
+.page3-text > h2{
+    font-size: 28vw;
+    letter-spacing: -15px;
+    line-height: 50vh;
+}
+.page4{
+    padding: 1vw;
+    min-height: 100vh;
+    background-color: #C5BEB4;
+}
+.page4-head-1 > h2{
+    font-family: dema;
+    letter-spacing: -2px;
+}
+.page4-img{
+    overflow: hidden;
+}
+.page4-img > img{
+    transition: linear 0.5s;
+}
+ .page4-img > img:hover{
+    scale: 1.1;
+}
+.page4-text > h2{
+    font-size: 7vw;
+    letter-spacing: -5px;
+    line-height: 15vh;
+}
+.page4-text > h2 > span{
+    font-size: 10vw;
+}
+.page4-box{
+    height: 150px;
+    width: 80%;
+    margin: auto;
+    margin-top: 8vw;
+    overflow: hidden;
+}
+.page4-box > h2{
+    letter-spacing: -2px;
+    transform: translateX(-50%);
+    transition:1s;
+}
+.page4-box > img{
+    transform: translateX(-140%);
+    transition: 1s;
+}
+.page4-box:hover img{
+    transform: translateX(40%);
+}
+.page4-box:hover h2{
+    transform: translateX(100%);
+}
+.page5{
+    min-height: 200vh;
+    width: 100%;
+    background-color: #C5BEB4;
+}
+.text1 > h2{
+    font-size: 33vw;
+    color: #1C1C1A;
+    letter-spacing: -2vw;
+    line-height: 55vh;
+}
+.text2 > h2{
+    font-size: 30vw;
+    color: #1C1C1A;
+    letter-spacing: -2vw;
+    line-height: 50vh;
+}
+.page5-img3{
+    width: 25%;
+}
+.text3 > h2{
+    font-size: 25vw;
+    background-color: #1C1C1A;
+    color: #C5BEB4;
+    letter-spacing: -1vw;
+    line-height: 48vh;
+}
+.page6{
+    min-height: 90vh;
+    width: 100%;
+    background-color: #C5BEB4;
+}
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.footer > h2{
+    animation: scroll 3s linear infinite;
+}
+.footer:hover h2{
+    animation-play-state: paused;
+}
+.footer::-webkit-scrollbar{
+    display: none;
+}
+.foot{
+    background-color: #1C1C19;
+    color: #C5BEB4;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-100% - 4px));
+    }
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+    .page1{
+        min-height: 25vh;
+    }
+    .page2-left > h2{
+        font-size: 25vw;
+        letter-spacing: -7px;
+        line-height: 13vh;
+    }
+    .page2-left > h2 > span{
+        font-size: 30vw;
+    }
+    .page2-right > h2{
+        font-size: 13vw;
+        letter-spacing: -2px;
+        line-height: 8vh;
+    }
+    .page3{
+       display: none;
+    }
+    .page4{
+        padding: 0 1vw;
+        min-height: 50vh;
+        background-color: #C5BEB4;
+    }
+    .page4-head-1 > h2{
+        font-family: dema;
+        letter-spacing: -2px;
+        margin-top: 0px;
+    }
+    .page4-head-1 > p{
+        margin-top: 0px;
+    }
+    .page6{
+        min-height: 20vh;
+        width: 100%;
+        background-color: #C5BEB4;
+    }
+}
